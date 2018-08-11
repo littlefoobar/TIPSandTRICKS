@@ -1,5 +1,14 @@
 <?php
+function odd($var)
+{
+    return($var & 1);
+}
 
+function even($var)
+{
+   
+    return(!($var & 1));
+}
 function find($integers) {
 
 	$array_count_odd = array_count_values(array_filter($integers, "odd"));
