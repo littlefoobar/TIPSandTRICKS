@@ -1,0 +1,15 @@
+<?php
+
+function solution($A) {
+  $a = array_flip($A);
+  
+  for($i=1;isset($a[$i]);$i++){
+      continue;
+  }
+  return $i;
+}
+
+$A = [-1,-3,5];
+echo solution($A);
+
+?>
