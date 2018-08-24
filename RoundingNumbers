@@ -1,5 +1,0 @@
-function solution($X, $Y, $D):int {
-    return (($Y-$X)+$D-1)/$D;
-}
-
-// [no + (divisor-1)]/divisor => To round numbers
