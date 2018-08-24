@@ -1,0 +1,17 @@
+Easy trick to get result of the left shift operation, e.g.
+
+15 << 2 = 15 * (2*2) = 60
+
+15 << 3 = 15 * (2*2*2) = 120
+
+15 << 5 = 15 * (2*2*2*2*2) = 480
+
+and so on..
+
+So it's:
+
+(number on left) multiplied by (number on right) times 2.
+
+Same goes for right shift operator (>>), where:
+
+(number on left) divided by (number on right) times 2
