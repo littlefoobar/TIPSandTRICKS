@@ -1,0 +1,27 @@
+
+
+1. BinaryGap
+Find longest sequence of zeros in binary representation of an integer.
+
+function solution($n)
+{
+    $result = [];
+    $tab = explode("1", decbin($n));
+    
+    if ($tab[sizeof($tab)-1]!="") array_pop($tab);  //Important
+    
+    // To remove the last group of zeros//
+    //Since there is no 1 after that no need to count total number of zeros in that array group)
+    
+    foreach ($tab as $t) {
+        if ($t != "") {
+            $result[] = $t;
+        }
+    }
+   
+    if (!empty($result)) {
+        return $maxlen = max(array_map('strlen', $result));
+    } else {
+        return 0;
+    }
+}
